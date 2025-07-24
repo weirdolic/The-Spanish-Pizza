@@ -48,6 +48,7 @@ body {
 
 /* Login icon on right */
 .login-icon a {
+  /* margin-left: 600px; */
   text-decoration: none;
   color: #333;
   font-weight: bold;
@@ -62,16 +63,16 @@ body {
 /* Responsive */
 @media (max-width: 768px) {
   .main-header {
-    /* display: flex;
-    flex-direction: column; */
-    /* align-items: center; */
+     display: flex;
+    flex-direction: column; 
+    /* align-items: center;  */
   }
 
   .left-section {
-    /* display: flex;
-    flex-direction: column; */
-    /* align-items: center;
-    width: 100%; */
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    width: 100%; 
   }
 
   .logo {
@@ -87,15 +88,16 @@ body {
 }
 
   .navbar {
-    /* display: flex; */
+    display: flex;
     /* justify-content: center; */
-    /* flex-wrap: wrap; */
+    flex-wrap: wrap;
     /* gap: 15px; */
     /* margin-bottom: 10px; */
-    margin-right: -70px;
+    /* margin-right: -70px; */
   }
 
   .login-icon {
+    
    align-items: center;
     width: 100%;
   }
@@ -212,3 +214,39 @@ body {
     }
 
  
+.video-background {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+
+.video-background video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -1;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+}
+
+
+.video-background .content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  color: white;
+  padding-top: 20%;
+}
+.video-background::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0, 0, 0, 0.4); /* dark transparent layer */
+  z-index: 0;
+}
