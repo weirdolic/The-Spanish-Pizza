@@ -6,57 +6,89 @@
     <title>The Spannish Pizza</title>
 
     <link rel="stylesheet" href="style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </head>
 
 <body> 
- <header class="main-header">
-    <div class="left-section">
+
+
+<!-- Fixed Header -->
+<header class="bg-white fixed-top shadow-sm py-2">
+  <div class="container">
+
+    <!-- ✅ Row 1: Logo (left) + Contact (right) on ALL screen sizes -->
+    <div class="d-flex justify-content-between align-items-center">
       <div class="logo">
-        <img src="Screenshotlogo.png" alt="Logo" />
+        <a href="index.html"><img src="Screenshotlogo.png" alt="Logo" style="width: 80px;"></a>
       </div>
-      <nav class="navbar">
-        <a href="#">Home</a>
-        <a href="#">Pizza</a>
-        <a href="#">Burger</a>
-        <a href="#">Contact Us</a>
+
+      <div class="login-icon">
+        <a href="tel:+923026263976" class="text-dark fw-bold text-decoration-none d-flex align-items-center" style="text-decoration: none; color: black;">
+          <i class="fas fa-user me-2"></i> 03026263976
+        </a>
+      </div>
+    </div>
+
+    <!-- ✅ Row 2: Full width navbar -->
+    <div class="mt-3">
+      <nav class="nav justify-content-center flex-wrap">
+        <a class="nav-link text-dark fw-bold" href="index.html">Home</a>
+        <a class="nav-link text-dark fw-bold" href="pizza.html">Pizza</a>
+        <a class="nav-link text-dark fw-bold" href="burger.html">Burger</a>
+        <a class="nav-link text-dark fw-bold" href="menu.html">Menu</a>
       </nav>
     </div>
-    <div class="login-icon">
-      <a href="#"><i class="fas fa-user"></i> 0303-5282322<a>
-      
-    </div>
-  </header>
-      <!-- pizza heading carousal -->
 
-  <div class="split-container">
-    <!-- Left: Text -->
-    <div class="text-side">
-      <div>
-        <h1>The Spanish Pizza</h1>
-        <p>Indulge the taste of perfection with every bite.<br>We serve bold, flavorful pizzas made with the finest Mediterranean ingredients. 
-        </p>
-      </div>
-    </div>
-
-
-     <div class="image-side d-flex flex-column">
-      <div class="top-images">
-        <img src="pii.webp" alt="Pizza">
-        <img src="Zinger-Burger.png" alt="Burger">
-      </div>
-      <div class="bottom-image">
-        <img src="crown1.webp" alt="Crown">
-      </div>
-    </div>
   </div>
+</header>
+
+
+    <div class="video-wrapper">
+  <video autoplay muted loop playsinline>
+    <source src="spanish pizza video.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+</div>
+
 
                          <!-- add pizza images -->
+
+  <a href="menu.html" style="text-decoration: none; color: black;"><h2 style="margin:20px 10px;">EXPLORE MENU </h2></a>
+<div class="image-row">
+  <div class="card ">
+   <a href="pizza.html" style="text-decoration: none; color: black;"> <img src="p.jpeg" alt="Image 1">
+    <p class="name">PIZZA</p></a>
+   
+  </div>
+
+
+  <div class="card">
+     <a href="burger.html" style="text-decoration: none; color: black;"></a><img src="pi.jpeg" alt="Image 2">
+    <p class="name">BURGER</p></a>
+   
+  </div>
+
+  <div class="card">
+     <a href="menu.html" style="text-decoration: none; color: black;"></a><img src="pi.webp" alt="Image 3">
+    <p class="name">STARTER</p></a>
+   
+  </div>
+
+  <div class="card">
+     <a href="menu.html" style="text-decoration: none; color: black;"></a><img src="pii.webp" alt="Image 4">
+    <p class="name">PASTA</p></a>
+   
+  </div>
+
+</div>
+
+   
+  
  <div style="color: chocolate; margin-left: 20px;"> 
   
-    <span style="color: black;"> PIZZA ___ HOT ITEMS</span></div>
+    <a href="pizza.html" style="text-decoration: none;"><h6 style="color: black;"> PIZZA ___ SPECIAL ITEMS</h6></a></div>
 <div class="image-row">
   <div class="card">
     <img src="p.jpeg" alt="Image 1">
@@ -112,7 +144,7 @@
  <!-- burgers     -->
   <div style="color: chocolate; margin-left: 20px;"> 
   
-    <span style="color: black;"> PIZZA ___ HOT ITEMS</span></div>
+    <a href="menu.html" style="text-decoration: none; color: black;"><h6>SPECIAL ITEMS</h6></a></div>
 <div class="image-row">
   <div class="card">
     <img src="p.jpeg" alt="Image 1">
@@ -165,84 +197,36 @@
 </div>
 
 
-<!-- others -->
- <div style="color: chocolate; margin-left: 20px;"> 
   
-    <span style="color: black;"> PIZZA ___ HOT ITEMS</span></div>
-<div class="image-row">
-  <div class="card">
-    <img src="p.jpeg" alt="Image 1">
-    <p class="name">Product 1</p>
-    <p class="price">Rs. 500</p>
-  </div>
+  <footer class="bg-secondary text-white py-4  pt-0" >
+   <div class="container" style=" padding-top: 30px ; margin-bottom: 20px;  ">
+    <div class="row text-center text-md-start align-items-center">
 
-  <div class="card">
-    <img src="pi.jpeg" alt="Image 2">
-    <p class="name">Product 2</p>
-    <p class="price">Rs. 750</p>
-  </div>
+      <!-- Address Section -->
+        <div class="col-md-4 " style=" padding-bottom: 50px; ">
+        <h5 class="fw-bold" style="color: rgb(206, 4, 4); border: red; border-bottom: 2px solid red; display: inline-block; padding-bottom: 5px; text-shadow: 1px 1px 3px white;">About Spanish Pizza</h5>
+        <p>At Spanish Pizza, we combine Mediterranean flavors with traditional pizza crusts. Our recipes bring you the zest of Spain with every bite.</p>
+      </div>
+     
 
-  <div class="card">
-    <img src="pi.webp" alt="Image 3">
-    <p class="name">Product 3</p>
-    <p class="price">Rs. 999</p>
-  </div>
+      <!-- Logo Section -->
+      <div class="col-md-4 mb-3 mb-md-0 d-flex justify-content-center" style=" padding-bottom: 50px; ">
+        <a href="index.html"><img src="Screenshotlogo.png" class="img-fluid rounded-circle shadow" style="width: 180px; height: 150px;" alt="Logo">
+      </a></div>
 
-  <div class="card">
-    <img src="pii.webp" alt="Image 3">
-    <p class="name">Product 3</p>
-    <p class="price">Rs. 999</p>
-  </div>
+      <!-- Info Section -->
+     <div class="col-md-4 mb-3 mb-md-0" style=" padding-bottom: 20px; ">
+        <h5 class="fw-bold" style="color: rgb(206, 4, 4); border: red; border-bottom: 2px solid red; display: inline-block; padding-bottom: 5px; text-shadow: 1px 1px 3px white;" >Our Address</h5>
+        <p class="mb-1">123 Main Street</p>
+        <p class="mb-1">Lahore, Pakistan</p>
+        <p>Email: info@spanishpizza.com</p>
+      </div>
+      <div style="color: rgb(51, 50, 50);">
+        <p>All right preseverd by EshaZaman</p>
+      </div>
 
-  <div class="card">
-    <img src="ph0.png" alt="Image 3">
-    <p class="name">Product 3</p>
-    <p class="price">Rs. 999</p>
-  </div>
 
-  <div class="card">
-    <img src="pi.jpeg" alt="Image 3">
-    <p class="name">Product 3</p>
-    <p class="price">Rs. 999</p>
-  </div>
-
-  <div class="card">
-    <img src="pii.webp" alt="Image 3">
-    <p class="name">Product 3</p>
-    <p class="price">Rs. 999</p>
-  </div>
-
-  <div class="card">
-    <img src="pi.jpeg" alt="Image 3">
-    <p class="name">Product 3</p>
-    <p class="price">Rs. 999</p>
-  </div>
-  <!-- Add more cards as needed -->
-</div>
-<hr>
-<!-- footer -->
- <footer class="site-footer">
-  <div class="footer-container">
-
-     <div class="footer-section">
-      <h3>Info</h3>
-      <p>
-        Welcome to our Spanish Pizza Shop! We serve bold, flavorful pizzas made with the finest Mediterranean ingredients. Visit us for a delicious experience you'll never forget.
-      </p>
     </div>
-
-     <div class="flogo">
-      <img src="Screenshotlogo.png" alt="">
-    </div>
-
-    <div class="footer-section">
-      <h3>Address</h3>
-      <p>Nokhar Near 1122 Office,<br>Hafizabad road<br>ZIP 28001</p>
-    </div>
-
-   
-   
-    <!-- <pre>Designed by EshaZaman</pre> -->
   </div>
 </footer>
 
